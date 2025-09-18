@@ -17,10 +17,10 @@ def checkmate(board: str):
 
     kx, ky = king_pos  # ตำแหน่ง King
     # Find (K):     #
+    # K . . . . . . #
     # . . . . . . . #
     # . . . . . . . #
     # . . . . . . . #
-    # . . . . . K . #
 
     # ฟังก์ชันตรวจสอบทิศทาง (ใช้กับ Rook, Bishop, Queen)
     def check_direction(dx, dy, attackers):
@@ -46,7 +46,7 @@ def checkmate(board: str):
             print("Success")                                                                 # . . . B . . . #
             return                                                                           # . . X . X . . #
                                                                                              # . X . . . X . #
-                                                                                             
+
     # 3) Rook (R) → เดินตรง                                                                   # Rook (R):     #
     for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:                                        # . . . X . . . #
         if check_direction(dx, dy, ['R', 'Q']):  # Rook หรือ Queen                            # . . . X . . . #
