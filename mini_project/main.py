@@ -27,6 +27,15 @@ R...
 .B.."""
     print("Board 3: ", end='')
     checkmate(board3)
+    
+    # ตัวอย่างที่ 4
+    board4 = """\
+..Q.
+P...
+....
+.B.."""
+    print("Board 4: ", end='')
+    checkmate(board4)
 
 if __name__ == "__main__":
     main()
