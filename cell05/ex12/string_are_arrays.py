@@ -9,7 +9,7 @@ def string_are_arrays():
         
         # วนลูปผ่านทุกตัวอักษรในสตริง
         for char in string:
-            if char == 'z':
+            if char == 'z' or char == 'Z':
                 print("z")
                 found_z = True
         
