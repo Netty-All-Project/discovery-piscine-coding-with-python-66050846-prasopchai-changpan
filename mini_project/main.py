@@ -1,7 +1,3 @@
-# main.py
-# -----------------------------------
-# main program ที่เอาไว้รันทดสอบ checkmate
-
 from checkmate import checkmate
 
 def main():
@@ -11,13 +7,26 @@ R...
 .K..
 ..P.
 ...."""
+    print("Board 1: ", end='')
     checkmate(board1)
 
     # ตัวอย่างที่ 2
     board2 = """\
-..
-.K"""
+R...
+.K..
+....
+...."""
+    print("Board 2: ", end='')
     checkmate(board2)
+    
+    # ตัวอย่างที่ 3
+    board3 = """\
+.K.Q
+....
+....
+.B.."""
+    print("Board 3: ", end='')
+    checkmate(board3)
 
 if __name__ == "__main__":
     main()
